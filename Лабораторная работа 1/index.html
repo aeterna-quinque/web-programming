@@ -1,0 +1,42 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="first.css">
+    <title>Лабораторная работа 1</title>
+</head>
+<body>
+    <div class='header'>
+        <h1>Выберите произведение!</h1>
+    </div>
+    <div class='main_block'>
+        <table class="table">
+            <caption class="caption">Список произведений</caption>
+            <tr>
+                <th class="th">Автор</th>
+                <th class="th">Произведение</th>
+            </tr>
+            <tr>
+                <td class="td">П.П. Бажов</td>
+                <td class="td"><a href="FB.html">Малахитовая Шкатулка</a></td>
+            </tr>
+            <tr>
+                <td class="td">П.П. Ершов</td>
+                <td class="td"><a href="SB.html">Конек-Горбунок</a></td>
+            </tr>
+            <tr>
+                <td class="td">Русская народная сказка</td>
+                <td class="td"><a href="TB.html">Летучий корабль</a></td>
+            </tr>
+        </table>
+        <h1 id="question">Какое произведение заинтриговало вас?</h1>
+            <label>Первое<input type="radio" name="time" value="1"></label>
+            <label>Второе<input type="radio" name="time" value="2"></label>
+            <label>Третье<input type="radio" name="time" value="3"></label>
+        <h1 id="question">Заказ произведений:</h1>
+            <label><input type="checkbox" name="fb">Первое произведение</label>
+            <label><input type="checkbox" name="sb">Второе произведение</label>
+            <label><input type="checkbox" name="tb">Третье произведение</label>
+        <p><input type="button" value=" Заказать "></p>
+    </div>
+</body>
+</html>
