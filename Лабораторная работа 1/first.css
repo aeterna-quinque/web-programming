@@ -19,7 +19,6 @@
 {
   text-indent: 1.5em;
 }
-
 .table
 {
   margin-top: 20px;
@@ -27,7 +26,6 @@
   width: 100%;
   background: #e2b869;
 }
-
 .th
 {
   background: #e2b869;
@@ -35,7 +33,6 @@
   border-style: solid;
   border-width: thin;
 }
-
 .td
 {
   background-color: aliceblue;
@@ -43,19 +40,16 @@
   border-style: solid;
   border-width: thin;
 }
-
 .caption
 {
   font-size: x-large;
   font-style: oblique;
 }
-
 .book_page
 {
   margin-left: 30px;
   margin-right: 30px;
 }
-
 #first_paragraph
 {
   color: #805D56;
