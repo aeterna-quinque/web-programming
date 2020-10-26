@@ -1,0 +1,44 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Стоимость путевки</title>
+    <script type="text/javascript">
+      function count()
+      {
+        let days = Number(form1.days.value);
+        let dayCost = 1600;
+        form1.countDisplay.value = days * dayCost;
+      }
+      function colorChange()
+      {
+        document.getElementById("header1").style.backgroundColor = "white";
+      }
+    </script>
+  </head>
+  <body>
+    <form name="form1">
+      <h1 id="header1" style="background-color: lightgrey" onmouseout=colorChange()>Добро пожаловать!</h1>
+
+      Сколько дней вы собираетесь отдыхать?
+      <select name="days">
+        <option select>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+      </select> <br>
+      <input type="button" value="Посчитать" onclick=count()> <br><br><br>
+      Стоимость путевки: <input type="text" name="countDisplay" size="4"> <br><br><br>
+      <input type="reset" value="Очистить форму">
+    </form>
+  </body>
+</html>
