@@ -1,0 +1,190 @@
+::-webkit-scrollbar{
+  width: 0;
+}
+
+.header-bar a{
+  display: inline;
+  white-space: nowrap;
+}
+
+.header-bar hr{
+  width: 100%;
+  background-color: #CD5C5C;
+  height: 3px;
+}
+
+.header-bar p{
+  top: -14px;
+  right: 40%;
+  left: 40%;
+}
+
+.promo{
+    background: url(../IMG/Rob.jpg) no-repeat;
+    width: 100%;
+    height: 1000px;
+    background-size: 100% 100%;
+    border-top: 0%;
+}
+
+.promo h2{
+    color: #2F4F4F;
+    width: 40%;
+    margin-left: 60%;
+    font-size: 400%;
+}
+
+.promo h4{
+    color: #2F4F4F;
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 50%;
+    font-size: 250%;
+    margin-bottom: 20%;
+}
+
+.top{
+  margin-top: 50px;
+}
+
+.top h2{
+    background-color: #DCDCDC;
+    margin-left: 20%;
+    width: 60%;
+    text-align: center;
+}
+
+.top h1{
+    background-color: #DCDCDC;
+    margin-left: 20%;
+    width: 60%;
+    text-align: center;
+}
+
+.bord{
+    margin-left: 45.5%;
+    width: 100%;
+    height: 100%;
+}
+
+.pros{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.pros h3{
+    font-size: 200%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.pros table{
+    border-spacing: 30px 20px;
+    font-size: 130%;
+    width: 800px;
+}
+
+.pros td{
+  text-align: justify;
+  vertical-align: middle;
+}
+
+.But{
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    background: #CD5C5C;
+    padding: .7em 1.5em;
+    outline: none;
+}
+.But:hover { background: rgb(232,95,76); }
+.But:active { background: rgb(152,15,0); }
+
+.headerBut{
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    background: #CD5C5C;
+    padding: .7em 1.5em;
+    outline: none;
+    min-width: 300px;
+}
+.headerBut:hover { background: rgb(232,95,76); }
+.headerBut:active { background: rgb(152,15,0); }
+
+.price{
+    list-style-position: inside;
+    margin-top: 100px;
+}
+
+.price h3{
+    border-top: 10px;
+    font-size: 200%;
+}
+
+.price ul{
+    border-top: 10px;
+    font-size: 200%;
+}
+
+.questions h3{
+    text-align: center;
+    font-size: 200%;
+    margin-top: 100px;
+}
+
+.questions p{
+  width: 700px;
+  text-align: justify;
+}
+
+ul.questions{
+    font-size: 24px;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.end{
+    background-color: #696969;
+    height: 170px;
+    margin: -8px;
+}
+
+table.book{
+    font-family: sans-serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #ECE9E0;
+    color: #656665;
+    border: 16px solid #ECE9E0;
+    border-radius: 20px;
+    margin: 35px;
+}
+.book th{
+    font-size: 18px;
+    padding: 10px;
+}
+
+.book td{
+    background: #f5d7b8;
+    padding: 10px;
+}
+
+.Sum{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 7%;
+}
+
+.book select{
+    font-weight: bold;
+}
+
+img.Robot{
+    border-radius: 20px;
+    border-spacing: 5px;
+    border: 16px solid #ECE9E0;
+    width: 120px;
+}

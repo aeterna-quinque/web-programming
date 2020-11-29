@@ -1,0 +1,98 @@
+.promo{
+    background: url(../IMG/Rob.jpg);
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    border-top: 0%;
+}
+
+.promo h2{
+    color: #2F4F4F;
+    width: 40%;
+    margin-top: 0%;
+    margin-left: 60%;
+    font-size: 400%;
+}
+
+.promo h4{
+    color: #2F4F4F;
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 50%;
+    font-size: 250%;
+}
+
+.top h2{
+    background-color: #DCDCDC;
+    margin-left: 20%;
+    width: 60%;
+    text-align: center;
+}
+
+.top h1{
+    background-color: #DCDCDC;
+    margin-left: 20%;
+    width: 60%;
+    text-align: center;
+}
+
+.bord{
+    margin-left: 45.5%;
+    width: 100%;
+    height: 100%;
+}
+
+.pros{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.pros h3{
+    width: 18%;
+    margin-left: 41.8%;
+    font-size: 200%;
+}
+
+.pros table{
+    border-spacing: 30px 20px;
+    font-size: 130%;
+}
+
+a.But{
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    background: #CD5C5C;
+    padding: .7em 1.5em;
+    outline: none;
+}
+a.But:hover { background: rgb(232,95,76); }
+a.But:active { background: rgb(152,15,0); }
+
+.price{
+    list-style-position: inside;
+}
+
+.price h3{
+    border-top: 10px;
+    font-size: 200%;
+}
+
+.price ul{
+    border-top: 10px;
+    font-size: 200%;
+}
+
+.questions h3{
+    border-top: 10px;
+    font-size: 200%;
+}
+
+ul.questions{
+    font-size: 24px;
+    list-style-position: inside;
+}
+
+.end{
+    background-color: #696969;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cyb$rMon$y</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+
+    <body bgcolor="#DCDCDC">
+        <div>
+          <div class="header-bar" style="position: relative;">
+            <table>
+              <tr style="height: 110px">
+                <td style="align: left">
+                  <a class="But" href="index.html">На главную</a>
+                </td>
+                <td style="width: 100%;">
+                  <p align="center" style="position: absolute;">
+                      <img class="Robot" src="IMG/Logo.jpg" alt="Robot" width=10% height=15%>
+                  </p>
+                </td>
+                <td style="align: right">
+                  <a class="But" href="table.html">Таблица заказов</a>
+                </td>
+              </tr>
+            </table>
+            <hr>
+          </div>
+            <h2>
+                Форма оформления заказа на робота
+            </h2>
+            <div>
+                <h3>
+                    Сформируйте ваш заказ
+                </h3>
+                <form>
+                    <table class="book">
+                        <tr>
+                            <th>
+                                Заказ
+                            </th>
+                            <th>
+                                Количество
+                            </th>
+                            <th>
+                                Стоимость
+                            </th>
+                            <th>
+                                Дата
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option>Торговый советник</option>
+                                    <option>Индикатор</option>
+                                    <option>Скрипт</option>
+                                    <option>Онлайн консультация</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input>
+                            </td>
+                            <td>
+                                <output name="money">
+
+                                </output>
+                            </td>
+                            <td>
+                                <input>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <p>
+                    <input class="But" type="button" value="Добавить позицию в заказ">
+                    <input class="But" type="button" value="Вычислить стоимость заказа">
+                    <font class="Sum">
+                        Итого:
+                    </font>
+                    <output name="Sum">
+
+                    </output>
+                </p>
+            </div>
+            <form>
+                <h4>
+                    Фамилия
+                </h4>
+                <p>
+                    <input>
+                </p>
+                <h4>
+                    Имя
+                </h4>
+                <p>
+                    <input>
+                </p>
+                <h4>
+                    Желаемый режим выполнения заказа (Данное поле влияет на стоимость)
+                </h4>
+                <select>
+                    <option>VIP</option>
+                    <option>Высокий приоритет</option>
+                    <option>Средний приоритет</option>
+                    <option>Низкий приоритет</option>
+                </select>
+                <p><input name="Opt" type="radio" checked> Уделить особое внимание скорости реакции робота</p>
+                <p><input name="Opt" type="radio"> Не уделять внимание оптимизации</p>
+                <p><input type="file" атрибуты></p>
+                <p>
+                    <input type="checkbox"> Я даю согласие на обработку моих персональных данных и продуктов моей интеллектуальной собственности (Торговая стратегия)
+                </p>
+                <p>
+                    <input class="But" type="button" value="Отправить заказ">
+                    <input class="But" type="button" value="Очистить форму">
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
