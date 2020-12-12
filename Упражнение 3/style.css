@@ -1,0 +1,41 @@
+math{
+  letter-spacing: 0.1em;
+}
+
+table{
+  border-color: black;
+  border-style: solid;
+  border-width: 10px;
+  border-spacing: 0;
+  text-align: center;
+  max-width: 700px;
+  border-color: #FF6D6D;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-family: Cambria Math;
+}
+
+td{
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-spacing: inherit;
+  line-height: 0.9;
+  background-color: #FFF4BF;
+  border-color: inherit;
+  height: 50px;
+  padding: 5px;
+}
+
+th{
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-spacing: inherit;
+  background-color: #F4E07D;
+  border-color: inherit;
+  height: 50px;
+  font-weight: normal;
+  padding: 5px;
+}

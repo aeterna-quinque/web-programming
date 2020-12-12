@@ -165,11 +165,13 @@ table.book{
 .book th{
     font-size: 18px;
     padding: 10px;
+    text-align: center;
 }
 
 .book td{
     background: #f5d7b8;
     padding: 10px;
+    text-align: center;
 }
 
 .Sum{
@@ -187,4 +189,37 @@ img.Robot{
     border-spacing: 5px;
     border: 16px solid #ECE9E0;
     width: 120px;
+}
+
+.order form{
+  margin-bottom: 5%;
+  margin: 20%;
+  margin-top: 5%;
+  background-color: #ECE9E0;
+  padding: 30px;
+  border-radius: 20px;
+  border-color: #f5d7b8;
+  border-width: 30px;
+  border-style: solid;
+  max-width: 600px;
+}
+
+.order-block h3{
+  font-family: sans-serif;
+  color: #353635;
+}
+
+h2{
+  font-family: sans-serif;
+  color: #353635;
+  margin-top: 50px;
+}
+
+.order h4{
+  font-family: sans-serif;
+  color: #353635;
+}
+
+.queue-block{
+  display: none;
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Таблица при помощи html</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th style="width: 72px;">Номер варианта</th>
+        <th style="width: 227px;">Задачи минимизации целевой функции <math>f(x)</math></th>
+        <th style="width: 85px;">Начальный вектор <math>x<sup>0</sup></math></th>
+        <th style="width: 140px;">Начальные интервалы варьирования по аргументам</th>
+        <th style="width: 119px;">Ограничения на независимые переменные</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td><math>
+          4(x<sub>1</sub> - 5)<sup>2</sup> + (x<sub>2</sub> - 6)<sup>2</sup>
+        </math></td>
+        <td><math>
+          -4; 0
+        </math></td>
+        <td><math>
+          5; 5
+        </math></td>
+        <td><math>
+          -10 &le; x<sub>1</sub> &le; 10<br>
+          -4 &le; x<sub>2</sub> &le; 18
+        </math></td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td><math>
+          [1,5 - x<sub>2</sub>(x<sub>1</sub> - x<sub>2</sub>)]<sup>2</sup> +<br>
+          + [2,25 - x<sub>1</sub>(1 - x<sub>2</sub><sup>2</sup>)]<sup>2</sup> +<br>
+          + [2,625 - x<sub>1</sub>(1 - x<sub>2</sub><sup>3</sup>)]<sup>2</sup>
+        </math></td>
+        <td><math>
+          3; 0,5
+        </math></td>
+        <td><math>
+          0,5; 0,5
+        </math></td>
+        <td><math>
+          2 &le; x<sub>1</sub> &le; 6<br>
+          0 &le; x<sub>2</sub> &le; 3
+        </math></td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td><math>
+          (x<sub>1</sub> - 1,2)<sup>2</sup> + &radic;<span style="text-decoration: overline">x</span><sub>3</sub> + (x<sub>2</sub> - 5,6)<sup>2</sup>
+        </math></td>
+        <td><math>
+          2,5; 4; 2,5
+        </math></td>
+        <td><math>
+          0,5; 0,5; 0,5
+        </math></td>
+        <td><math>
+          0 &le; x<sub>1</sub> &le; 5<br>
+          3 &le; x<sub>2</sub> &le; 10<br>
+          0 &le; x<sub>3</sub> &le; 5
+        </math></td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td><math>
+          (x<sup>1</sup> + 10x<sup>2</sup>)<sup>2</sup> + 5(x<sub>3</sub> - x<sub>4</sub>)<sup>2</sup> +<br>
+          + (x<sub>2</sub> - 2x<sub>3</sub>)<sup>4</sup> + 10(x<sub>1</sub> - x<sub>4</sub>)<sup>2</sup>
+        </math></td>
+        <td><math>
+          1; 2; 3; 4
+        </math></td>
+        <td><math>
+          0,2; 0,2; 0; 2; 0,2
+        </math></td>
+        <td><math>
+          -1 &le; x<sub>1</sub> &le; 3<br>
+          -2 &le; x<sub>2</sub> &le; 4<br>
+          -2 &le; x<sub>3</sub> &le; 10<br>
+          -3 &le; x<sub>4</sub> &le; 10
+        </math></td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td><math>
+          100(x<sub>2</sub> - x<sub>1</sub><sup>3</sup>) + (1 - x<sub>1</sub>)<sup>2</sup>
+        </math></td>
+        <td><math>
+          3; 4
+        </math></td>
+        <td><math>
+          0,4; 0,4
+        </math></td>
+        <td><math>
+          0 &le; x<sub>1</sub> &le; 5<br>
+          0 &le; x<sub>2</sub> &le; 5
+        </math></td>
+      </tr>
+    </table>
+  </body>
+</html>

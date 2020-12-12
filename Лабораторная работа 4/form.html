@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <title>Cyb$rMon$y</title>
         <link rel="stylesheet" href="CSS/style.css">
+        <script type="text/javascript" src="JS/script.js"></script>
     </head>
-
-    <body bgcolor="#DCDCDC">
+    <body bgcolor="#DCDCDC" onload="saveInit()">
         <div>
           <div class="header-bar" style="position: relative;">
             <table>
@@ -20,16 +20,17 @@
                   </p>
                 </td>
                 <td style="align: right">
-                  <a class="But" href="table.html">Таблица заказов</a>
+                  <a class="But" onclick="switchBlocks()">Таблица заказов</a>
                 </td>
               </tr>
             </table>
             <hr>
           </div>
-            <h2>
+          <div class="order-block">
+            <h2 align="center">
                 Форма оформления заказа на робота
             </h2>
-            <div>
+            <div align="center">
                 <h3>
                     Сформируйте ваш заказ
                 </h3>
@@ -51,71 +52,99 @@
                         </tr>
                         <tr>
                             <td>
-                                <select>
-                                    <option>Торговый советник</option>
-                                    <option>Индикатор</option>
+                                <select class="pos" onchange="dynamicPriceDisplay()">
+                                    <option>Торговый советник (АТС)</option>
                                     <option>Скрипт</option>
+                                    <option>Индикатор</option>
                                     <option>Онлайн консультация</option>
                                 </select>
                             </td>
                             <td>
-                                <input>
+                                <input type="number" class="pos" min="1" onchange="dynamicPriceDisplay()">
                             </td>
                             <td>
-                                <output name="money">
-
-                                </output>
+                                <output class="pos">0</output>
                             </td>
                             <td>
-                                <input>
+                                <input type="date" class="pos" onclick="getCurrentDate()">
                             </td>
+                        </tr>
+                        <tr>
+                          <td style="visibility: hidden"></td>
+                          <td>
+                              <font class="Sum">
+                                Итого:
+                            </font>
+                          </td>
+                          <td>
+                            <output class="Sum" type="number">0</output>
+                          </td>
                         </tr>
                     </table>
                 </form>
-                <p>
-                    <input class="But" type="button" value="Добавить позицию в заказ">
-                    <input class="But" type="button" value="Вычислить стоимость заказа">
-                    <font class="Sum">
-                        Итого:
-                    </font>
-                    <output name="Sum">
-
-                    </output>
+                <p style="margin-top: -20px;">
+                    <input class="But" type="button" value="Добавить позицию в заказ" onclick="addPosition()">
                 </p>
             </div>
-            <form>
-                <h4>
-                    Фамилия
-                </h4>
-                <p>
-                    <input>
-                </p>
-                <h4>
-                    Имя
-                </h4>
-                <p>
-                    <input>
-                </p>
-                <h4>
-                    Желаемый режим выполнения заказа (Данное поле влияет на стоимость)
-                </h4>
-                <select>
-                    <option>VIP</option>
-                    <option>Высокий приоритет</option>
-                    <option>Средний приоритет</option>
-                    <option>Низкий приоритет</option>
-                </select>
-                <p><input name="Opt" type="radio" checked> Уделить особое внимание скорости реакции робота</p>
-                <p><input name="Opt" type="radio"> Не уделять внимание оптимизации</p>
-                <p><input type="file" атрибуты></p>
-                <p>
-                    <input type="checkbox"> Я даю согласие на обработку моих персональных данных и продуктов моей интеллектуальной собственности (Торговая стратегия)
-                </p>
-                <p>
-                    <input class="But" type="button" value="Отправить заказ">
-                    <input class="But" type="button" value="Очистить форму">
-                </p>
-            </form>
+            <div class="order" align="center">
+              <form align="left">
+                  <h4>
+                      Фамилия
+                  </h4>
+                  <p>
+                      <input class="fio" type="text" required='true'>
+                  </p>
+                  <h4>
+                      Имя
+                  </h4>
+                  <p>
+                      <input class="fio" type="text" required='true'>
+                  </p>
+                  <h4>
+                      Желаемый режим выполнения заказа (Данное поле влияет на стоимость)
+                  </h4>
+                  <select class="priority" onclick="savePriority()" onchange="priorityCounter()">
+                      <option>VIP</option>
+                      <option>Высокий приоритет</option>
+                      <option>Средний приоритет</option>
+                      <option selected>Низкий приоритет</option>
+                  </select>
+                  <p><input class="opt" type="radio" onchange="optiCounter(0)"> Уделить особое внимание скорости реакции робота</p>
+                  <p><input class="opt" type="radio" onchange="optiCounter(1)" checked> Не уделять внимание оптимизации</p>
+                  <h4>Файл технического задания</h4>
+                  <p><input type="file" accept=".pdf,.doc,.docx,.txt" class="doc"></p>
+                  <h4>Финальная стоимость: <output class="final_sum" type="number">0</output> рублей</h4>
+                  <p>
+                      <input type="checkbox" class="agreement"> Я даю согласие на обработку моих персональных данных и продуктов моей интеллектуальной собственности (Торговая стратегия)
+                  </p>
+                  <p>
+                      <input class="But" type="button" value="Отправить заказ" onclick="saveOrder()">
+                      <input class="But" type="button" value="Очистить форму" onclick="clearOrder()">
+                  </p>
+              </form>
+            </div>
+          </div>
+        <div class="queue-block" align="center">
+            <h2>
+                Таблица очереди заказов
+            </h2>
+            <table class="book">
+                <tr>
+                    <th>
+                        Заказ
+                    </th>
+                    <th>
+                        Заказчик
+                    </th>
+                    <th>
+                        Стоимость
+                    </th>
+                    <th>
+                        Дата
+                    </th>
+                </tr>
+            </table>
         </div>
+      </div>
     </body>
 </html>
